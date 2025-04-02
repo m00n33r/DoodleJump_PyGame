@@ -1,6 +1,6 @@
-from game_platform import Platform
+from src.entities.game_platform import Platform
 from random import choice
-from config import *
+from config.config import *
 
 
 def generate_platform(group, y):

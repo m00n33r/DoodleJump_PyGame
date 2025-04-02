@@ -40,4 +40,4 @@
 pip install -r requirements.txt
 
 # Запуск игры
-python main.py --resolution 1280x720 --fps 60
+python app.py

@@ -1,14 +1,13 @@
-from player import Player
-from generator import *
-from render import *
-from camera import move_camera
-from button import *
+from src.entities.player import Player
+from src.game.generator import *
+from src.game.render import *
+from src.game.camera import move_camera
+from src.entities.button import *
 from config import *
 
 
 def handle_events(events):
-    global running, starting_screen, main_menu, play_game, \
-        control_menu, player, platforms, game_over_screen, zero_height
+    global running, starting_screen, main_menu, play_game, control_menu, player, platforms, game_over_screen, zero_height
 
     """Получение всех движений/нажатий в программе"""
 
@@ -32,12 +31,29 @@ def handle_events(events):
             """Главное меню"""
 
             # Создание кнопок
-            new_game_button = Button(75, 300, 300, 100, (75, 200, 90),
-                                     "Новая игра", (0, 0, 0), pixel_font_large)
-            controls_button = Button(75, 410, 300, 100, (90, 170, 210),
-                                     "Управление", (0, 0, 0), pixel_font_large)
-            exit_button = Button(175, 520, 100, 50, (255, 50, 50),
-                                 "Выйти", (0, 0, 0), pixel_font)
+            new_game_button = Button(
+                75,
+                300,
+                300,
+                100,
+                (75, 200, 90),
+                "Новая игра",
+                (0, 0, 0),
+                pixel_font_large,
+            )
+            controls_button = Button(
+                75,
+                410,
+                300,
+                100,
+                (90, 170, 210),
+                "Управление",
+                (0, 0, 0),
+                pixel_font_large,
+            )
+            exit_button = Button(
+                175, 520, 100, 50, (255, 50, 50), "Выйти", (0, 0, 0), pixel_font
+            )
 
             # Отрисовка главного меню программы
             draw_main_menu(screen)
@@ -75,8 +91,9 @@ def handle_events(events):
             """Меню управления"""
             draw_control_menu(screen)
 
-            back_button = Button(175, 580, 100, 50, (255, 50, 50),
-                                 "Назад", (0, 0, 0), pixel_font)
+            back_button = Button(
+                175, 580, 100, 50, (255, 50, 50), "Назад", (0, 0, 0), pixel_font
+            )
             back_button.draw(screen)
 
             if event.type == pygame.QUIT:
@@ -108,12 +125,29 @@ def handle_events(events):
             """Окончание игры"""
 
             # Создание кнопок
-            new_game_button = Button(75, 300, 300, 100, (75, 200, 90),
-                                     "Сыграть еще раз", (0, 0, 0), pixel_font_large)
-            main_menu_button = Button(75, 410, 300, 100, (90, 170, 210),
-                                      "Вернуться в меню", (0, 0, 0), pixel_font_large)
-            exit_button = Button(175, 520, 100, 50, (255, 50, 50),
-                                 "Выйти", (0, 0, 0), pixel_font)
+            new_game_button = Button(
+                75,
+                300,
+                300,
+                100,
+                (75, 200, 90),
+                "Сыграть еще раз",
+                (0, 0, 0),
+                pixel_font_large,
+            )
+            main_menu_button = Button(
+                75,
+                410,
+                300,
+                100,
+                (90, 170, 210),
+                "Вернуться в меню",
+                (0, 0, 0),
+                pixel_font_large,
+            )
+            exit_button = Button(
+                175, 520, 100, 50, (255, 50, 50), "Выйти", (0, 0, 0), pixel_font
+            )
 
             # Отрисовка окона окончания
             draw_game_over_screen(screen, player)
@@ -143,10 +177,10 @@ def handle_events(events):
                         game_over_screen, main_menu = False, True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     size = WIDTH, HEIGHT
     screen = pygame.display.set_mode(size)
-    pygame.display.set_caption('Doodle Jump')
+    pygame.display.set_caption("Doodle Jump")
 
     clock = pygame.time.Clock()
 

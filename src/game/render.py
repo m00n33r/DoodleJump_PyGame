@@ -1,5 +1,5 @@
-from images import *
-from fonts import *
+from src.utils.images import *
+from src.utils.fonts import *
 
 
 def draw_start_screen(screen):

@@ -1,5 +1,5 @@
-from config import *
-from images import *
+from config.config import *
+from src.utils.images import *
 
 
 class Player:

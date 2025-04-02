@@ -1,4 +1,4 @@
-from fonts import *
+from src.utils.fonts import *
 
 
 class Button:

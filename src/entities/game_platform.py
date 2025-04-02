@@ -1,5 +1,5 @@
-from config import *
-from load_image import load_image
+from config.config import *
+from src.utils.load_image import load_image
 from random import choice
 
 
