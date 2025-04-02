@@ -36,8 +36,11 @@
 ## 🚀 Быстрый старт
 
 ```bash
+# Клонирование репозитория
+git clone https://github.com/m00n33r/DoodleJump_PyGame.git
+
 # Установка зависимостей
 pip install -r requirements.txt
 
 # Запуск игры
-python app.py
+python3 app.py
