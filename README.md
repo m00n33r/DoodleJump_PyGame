@@ -1,11 +1,14 @@
 # Doodle Jump Clone (PyGame)
 
-![Game Screenshot](data/screenshots/PressToStart.png)
-![Game Screenshot](data/screenshots/MainMenu.png)
-![Game Screenshot](data/screenshots/Tutorial.png)
-![Game Screenshot](data/screenshots/GameProcess.png)
+<div align="center">
+  <img src="data/screenshots/PressToStart.png" width="200" alt="Press to Start">
+  <img src="data/screenshots/MainMenu.png" width="200" alt="Main Menu">
+  <img src="data/screenshots/Tutorial.png" width="200" alt="Tutorial">
+  <img src="data/screenshots/GameProcess.png" width="200" alt="Game Process">
+</div>
 
-Профессионально реализованный клон классической игры Doodle Jump на Python с использованием современных подходов в разработке игр. Проект демонстрирует навыки объектно-ориентированного программирования, работы с графикой и оптимизации игрового процесса.
+
+Клон классической игры Doodle Jump на Python.
 
 ## Ключевые технологии и архитектурные решения
 
