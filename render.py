@@ -58,7 +58,7 @@ def draw_game_over_screen(screen, player):
     screen.blit(max_score_text, (73, 220))
     screen.blit(score_text, (73, 255))
     if max_score <= float('%.2f' % player.score):
-        best_score_text = pixel_font.render("You beated your best score!!", True, pygame.Color('whitesmoke'))
+        best_score_text = pixel_font.render("New best score!!", True, pygame.Color('whitesmoke'))
         screen.blit(best_score_text, (60, 180))
 
 

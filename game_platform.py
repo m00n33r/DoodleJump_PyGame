@@ -7,7 +7,7 @@ class Platform(pygame.sprite.Sprite):
     """Класс платформ"""
 
     # Инициализация изображения
-    platform_img = pygame.transform.scale(load_image('game\\platform.png'), (59, 17))
+    platform_img = pygame.transform.scale(load_image('game/platform.png'), (59, 17))
 
     def __init__(self, group, x, y):
         super().__init__(group)

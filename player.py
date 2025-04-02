@@ -5,7 +5,7 @@ from images import *
 class Player:
     """Класс игрока"""
     # Инициализация изображения персонажа
-    player_img = pygame.transform.scale(load_image('game\\player.png'), (50, 50))
+    player_img = pygame.transform.scale(load_image('game/player.png'), (50, 50))
 
     def __init__(self, x, y, speed):
         """Инициализация"""

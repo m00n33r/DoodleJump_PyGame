@@ -1,4 +1,4 @@
-from platform import Platform
+from game_platform import Platform
 from random import choice
 from config import *
 
